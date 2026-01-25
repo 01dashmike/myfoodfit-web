@@ -1,0 +1,494 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f1417;
+  --foreground: #c8d0d6;
+  --surface: #161c20;
+  --surface-elevated: #1b2227;
+  --border: #2a3238;
+  --text-primary: #f5f7f8;
+  --text-body: #c8d0d6;
+  --text-muted: #9aa4ab;
+  --accent-primary: #1f8f4a;
+  --accent-primary-hover: #176b39;
+  --accent-outline: rgba(31, 143, 74, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f1417;
+    --foreground: #c8d0d6;
+    --surface: #161c20;
+    --surface-elevated: #1b2227;
+    --border: #2a3238;
+    --text-primary: #f5f7f8;
+    --text-body: #c8d0d6;
+    --text-muted: #9aa4ab;
+    --accent-primary: #1f8f4a;
+    --accent-primary-hover: #176b39;
+    --accent-outline: rgba(31, 143, 74, 0.4);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text-body);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Global Typography System
+   Single source of truth for semantic hierarchy
+   Mobile-first: smaller base sizes, scale up on sm+
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+/* Page title (h1) - used once per page */
+.page-title {
+  font-size: 1.5rem; /* 24px mobile */
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+@media (min-width: 640px) {
+  .page-title {
+    font-size: 2rem; /* 32px desktop - unchanged */
+  }
+}
+
+/* Section header (h2) - major conceptual blocks */
+.section-header {
+  font-size: 1.125rem; /* 18px mobile */
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+@media (min-width: 640px) {
+  .section-header {
+    font-size: 1.25rem; /* 20px desktop - unchanged */
+  }
+}
+
+/* Subsection header (h3) - inside cards only */
+.subsection-header {
+  font-size: 1rem; /* 16px mobile */
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+@media (min-width: 640px) {
+  .subsection-header {
+    font-size: 1.125rem; /* 18px desktop - unchanged */
+  }
+}
+
+/* Body text - calm, readable, neutral */
+.body-text {
+  font-size: 0.9375rem; /* 15px mobile */
+  line-height: 1.6;
+  max-width: 65ch; /* Constrain line length for readability */
+  color: var(--text-body);
+}
+
+@media (min-width: 640px) {
+  .body-text {
+    font-size: 1rem; /* 16px desktop - unchanged */
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Card Hierarchy (two tiers)
+   Spacing alone communicates hierarchy
+   Mobile-first: reduced padding, restore on sm+
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+/* Primary structural cards - page intros, key framing */
+.card-primary {
+  padding: 1.25rem; /* 20px mobile - reduced from 32px */
+}
+
+@media (min-width: 640px) {
+  .card-primary {
+    padding: 2rem; /* 32px desktop - unchanged */
+  }
+}
+
+/* Secondary content cards - lists, evidence, explanations */
+.card-secondary {
+  padding: 1rem; /* 16px mobile - reduced from 24px */
+}
+
+@media (min-width: 640px) {
+  .card-secondary {
+    padding: 1.5rem; /* 24px desktop - unchanged */
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Spacing Utilities
+   Mobile-first vertical rhythm
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+/* Section spacing - between major page blocks */
+.section-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* 32px mobile - reduced from 48px */
+}
+
+@media (min-width: 640px) {
+  .section-spacing {
+    gap: 3rem; /* 48px desktop - unchanged */
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Logo & Branding
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+.logo-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-outline);
+  border-radius: 6px;
+  background: var(--surface-elevated);
+  line-height: 1;
+}
+
+@layer utilities {
+  .bg-white {
+    background-color: var(--surface);
+  }
+
+  .bg-zinc-50 {
+    background-color: var(--background);
+  }
+
+  .bg-zinc-100 {
+    background-color: var(--surface-elevated);
+  }
+
+  .bg-zinc-900 {
+    background-color: var(--accent-primary);
+  }
+
+  .hover\:bg-zinc-800:hover {
+    background-color: var(--accent-primary-hover);
+  }
+
+  .text-zinc-900 {
+    color: var(--text-primary);
+  }
+
+  .text-zinc-800 {
+    color: var(--text-primary);
+  }
+
+  .text-zinc-700 {
+    color: var(--text-primary);
+  }
+
+  .text-zinc-600 {
+    color: var(--text-body);
+  }
+
+  .text-zinc-500 {
+    color: var(--text-muted);
+  }
+
+  .hover\:text-zinc-700:hover,
+  .hover\:text-zinc-900:hover {
+    color: var(--text-primary);
+  }
+
+  .border-zinc-200,
+  .border-zinc-100 {
+    border-color: var(--border);
+  }
+
+  .decoration-zinc-300 {
+    text-decoration-color: var(--border);
+  }
+
+  .hover\:decoration-zinc-600:hover {
+    text-decoration-color: var(--text-muted);
+  }
+
+  .text-gray-900,
+  .text-gray-800 {
+    color: var(--text-primary);
+  }
+
+  .text-gray-700 {
+    color: var(--text-body);
+  }
+
+  .text-gray-600,
+  .text-gray-500 {
+    color: var(--text-muted);
+  }
+
+  .bg-gray-50 {
+    background-color: var(--surface);
+  }
+
+  .border-gray-200 {
+    border-color: var(--border);
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Print Styles for PDF Export
+   Grant and institutional review ready
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+@media print {
+  /* Remove navigation and footer chrome */
+  header,
+  footer {
+    display: none !important;
+  }
+
+  /* Reset page background for clean printing */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ensure main content uses full width */
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Page setup and margins */
+  @page {
+    margin: 2cm 1.5cm;
+    size: A4;
+  }
+
+  /* Ensure readable font sizes in print */
+  .page-title {
+    font-size: 24pt;
+    line-height: 1.2;
+    margin-bottom: 12pt;
+  }
+
+  .section-header {
+    font-size: 16pt;
+    line-height: 1.3;
+    margin-top: 12pt;
+    margin-bottom: 8pt;
+  }
+
+  .subsection-header {
+    font-size: 14pt;
+    line-height: 1.4;
+    margin-top: 8pt;
+    margin-bottom: 6pt;
+  }
+
+  .body-text {
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+
+  /* Card styling for print */
+  .card-primary,
+  .card-secondary {
+    background: white !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4pt;
+    margin-bottom: 16pt;
+    padding: 16pt !important;
+  }
+  
+  /* Ensure all rounded elements have print-friendly radii */
+  .rounded-2xl,
+  .rounded-xl {
+    border-radius: 4pt !important;
+  }
+
+  /* Avoid page breaks inside cards */
+  .card-primary,
+  .card-secondary {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Avoid breaking after headings */
+  h1, h2, h3, h4, h5, h6,
+  .page-title,
+  .section-header,
+  .subsection-header {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Keep list items together */
+  li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Grid layouts should stack in print */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > * {
+    margin-bottom: 16pt;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Remove flex wrapping in print */
+  .flex-wrap {
+    flex-wrap: nowrap !important;
+  }
+  
+  /* Ensure flex columns stack properly */
+  .flex-col {
+    display: block !important;
+  }
+
+  /* Screenshot containers - preserve aspect ratio boxes */
+  [class*="aspect-"] {
+    border: 1px solid #e0e0e0 !important;
+    background: #f5f5f5 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    min-height: 100pt;
+  }
+  
+  /* Ensure screenshot placeholder text is visible */
+  [class*="aspect-"] p {
+    color: #666 !important;
+  }
+
+  /* Ensure links are visible with URLs */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  a[href^="mailto"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Don't print URLs for internal links */
+  a[href^="/"]::after {
+    content: "";
+  }
+
+  /* Ensure proper spacing between sections */
+  section {
+    margin-bottom: 16pt;
+  }
+
+  /* Remove excessive whitespace */
+  .gap-12 {
+    gap: 16pt !important;
+  }
+
+  .gap-6 {
+    gap: 12pt !important;
+  }
+
+  .gap-4 {
+    gap: 8pt !important;
+  }
+
+  /* Ensure text colors are print-friendly */
+  .text-zinc-600,
+  .text-zinc-500 {
+    color: #333 !important;
+  }
+
+  .text-zinc-900 {
+    color: #000 !important;
+  }
+
+  /* Remove shadows and effects */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure background colors don't interfere */
+  .bg-zinc-50,
+  .bg-zinc-100 {
+    background: white !important;
+  }
+
+  /* Optimize spacing for print density */
+  .mt-6,
+  .mt-5,
+  .mt-4,
+  .mt-3 {
+    margin-top: 8pt !important;
+  }
+
+  .space-y-6 > * + *,
+  .space-y-3 > * + *,
+  .space-y-2 > * + * {
+    margin-top: 6pt !important;
+  }
+
+  /* Ensure proper list formatting */
+  ul {
+    list-style-position: outside;
+    padding-left: 20pt;
+  }
+
+  /* Keep small text readable */
+  .text-sm {
+    font-size: 10pt !important;
+  }
+
+  .text-xs {
+    font-size: 9pt !important;
+  }
+
+  /* Ensure borders are visible but subtle */
+  .border-zinc-200,
+  .border-zinc-100 {
+    border-color: #d0d0d0 !important;
+  }
+
+  /* Force black text for better readability */
+  p, li, span, div {
+    color: #000 !important;
+  }
+
+  /* Preserve underlines on links */
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+
+  /* Hide print control elements */
+  .print\:hidden {
+    display: none !important;
+  }
+}
