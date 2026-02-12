@@ -19,199 +19,79 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col bg-zinc-50">
-        <header className="border-b border-zinc-200 bg-white print:hidden">
-          <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-            <a href="/" className="flex items-center">
+      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: '#fafafa' }}>
+        <header className="print:hidden" style={{ background: '#fff', borderBottom: '1px solid #e4e4e7' }}>
+          <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
               <Image
                 src="/logo.png"
                 alt="MyFoodFit"
                 width={36}
                 height={36}
-                className="h-9 w-auto"
+                style={{ height: '36px', width: 'auto' }}
               />
             </a>
-            <nav className="flex items-center gap-4 text-sm">
-              <a
-                href="/about"
-                className="text-zinc-600 hover:text-zinc-900 transition"
-              >
-                About
-              </a>
-              <a
-                href="/how-it-works"
-                className="text-zinc-600 hover:text-zinc-900 transition"
-              >
-                How It Works
-              </a>
-              <a
-                href="/work-with-us"
-                className="text-zinc-600 hover:text-zinc-900 transition"
-              >
-                Work With Us
-              </a>
-              <a
-                href="/research-method"
-                className="text-zinc-600 hover:text-zinc-900 transition"
-              >
-                Research Method
-              </a>
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+              <a href="/about">About</a>
+              <a href="/how-it-works">How It Works</a>
+              <a href="/work-with-us">Work With Us</a>
+              <a href="/research-method">Research Method</a>
             </nav>
           </div>
         </header>
 
-        <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <main style={{ maxWidth: '56rem', margin: '0 auto', width: '100%', flex: 1, padding: '2rem 1.5rem' }}>
           {children}
         </main>
 
-        <footer className="border-t border-zinc-200 bg-white print:hidden">
-          <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+        <footer className="print:hidden" style={{ background: '#fff', borderTop: '1px solid #e4e4e7' }}>
+          <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '2rem 1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}
               {/* Company */}
               <div>
-                <h3 className="text-sm font-semibold text-zinc-900">Company</h3>
-                <ul className="mt-3 space-y-2 text-sm">
-                  <li>
-                    <a
-                      href="/about"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/how-it-works"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      How It Works
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/responsible-use"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Responsible Use
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/work-with-us"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Work With Us
-                    </a>
-                  </li>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Company</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/how-it-works">How It Works</a></li>
+                  <li><a href="/responsible-use">Responsible Use</a></li>
+                  <li><a href="/work-with-us">Work With Us</a></li>
                 </ul>
               </div>
 
               {/* Research */}
               <div>
-                <h3 className="text-sm font-semibold text-zinc-900">Research</h3>
-                <ul className="mt-3 space-y-2 text-sm">
-                  <li>
-                    <a
-                      href="/research-method"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Research Method
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/evidence-log"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Evidence Log
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/for-funders"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      For Funders
-                    </a>
-                  </li>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Research</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                  <li><a href="/research-method">Research Method</a></li>
+                  <li><a href="/evidence-log">Evidence Log</a></li>
+                  <li><a href="/for-funders">For Funders</a></li>
                 </ul>
               </div>
 
               {/* Legal */}
               <div>
-                <h3 className="text-sm font-semibold text-zinc-900">Legal</h3>
-                <ul className="mt-3 space-y-2 text-sm">
-                  <li>
-                    <a
-                      href="/privacy"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/cookies"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Cookie Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/data-handling"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Data Handling
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/sub-processors"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Sub-Processors
-                    </a>
-                  </li>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Legal</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                  <li><a href="/privacy">Privacy Policy</a></li>
+                  <li><a href="/cookies">Cookie Policy</a></li>
+                  <li><a href="/data-handling">Data Handling</a></li>
+                  <li><a href="/sub-processors">Sub-Processors</a></li>
                 </ul>
               </div>
 
               {/* Data Rights */}
               <div>
-                <h3 className="text-sm font-semibold text-zinc-900">
-                  Your Data Rights
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm">
-                  <li>
-                    <a
-                      href="/data-requests"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Data Requests (DSAR)
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/data-deletion"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      Delete Your Data
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:privacy@myfoodfit.co.uk"
-                      className="text-zinc-600 hover:text-zinc-900 transition"
-                    >
-                      privacy@myfoodfit.co.uk
-                    </a>
-                  </li>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Your Data Rights</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                  <li><a href="/data-requests">Data Requests (DSAR)</a></li>
+                  <li><a href="/data-deletion">Delete Your Data</a></li>
+                  <li><a href="mailto:privacy@myfoodfit.co.uk">privacy@myfoodfit.co.uk</a></li>
                 </ul>
               </div>
             </div>
 
-            <div className="mt-8 border-t border-zinc-200 pt-6">
-              <p className="text-xs text-zinc-500">
+            <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #e4e4e7' }}>
+              <p style={{ fontSize: '0.75rem', color: '#71717a' }}>
                 © {new Date().getFullYear()} Food Signal Ltd. Registered in
                 England and Wales. All rights reserved.
               </p>
