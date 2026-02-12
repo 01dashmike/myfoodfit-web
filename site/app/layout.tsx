@@ -46,7 +46,7 @@ export default function RootLayout({
 
         <footer className="print:hidden" style={{ background: '#fff', borderTop: '1px solid #e4e4e7' }}>
           <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '2rem 1.5rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
               {/* Company */}
               <div>
                 <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Company</h3>
