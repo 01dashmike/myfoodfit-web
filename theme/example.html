@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFoodFit - Food Analysis</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="marketing-styles.css">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">MyFoodFit</a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link nav-link-active">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#download" class="btn btn-primary btn-small">Download App</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Analyze packaged food against your dietary preferences</h1>
+      <p class="hero-subtitle">
+        Scan products to see how they align with your dietary preferences and requirements.
+      </p>
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary btn-large">Download app</a>
+        <a href="#how-it-works" class="btn btn-secondary btn-large">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section surface-primary">
+    <div class="container">
+      <h2 class="text-center mb-5">Core features</h2>
+      <p class="text-center text-secondary mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+        MyFoodFit shows product information and how it aligns with your dietary preferences.
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
+        
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">📱</div>
+          <h3 class="feature-card-title">Barcode Scanning</h3>
+          <p class="feature-card-description">
+            Scan a product barcode to view details and how it aligns with your dietary preferences.
+          </p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+            <span class="rag-indicator rag-indicator-green"></span>
+            <span class="text-muted">Analysis results</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">🗄️</div>
+          <h3 class="feature-card-title">Cupboard</h3>
+          <p class="feature-card-description">
+            Track scanned products, view bands, and organize saved items.
+          </p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+            <span class="rag-badge rag-badge-green">Green</span>
+            <span class="rag-badge rag-badge-amber">Amber</span>
+            <span class="rag-badge rag-badge-red">Red</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">🍳</div>
+          <h3 class="feature-card-title">Recipe Suggestions</h3>
+          <p class="feature-card-description">
+            View recipe suggestions based on cupboard contents and dietary preferences.
+          </p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+            <span class="rag-indicator rag-indicator-green"></span>
+            <span class="text-muted">Uses your preferences</span>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">🎯</div>
+          <h3 class="feature-card-title">Diet Preferences</h3>
+          <p class="feature-card-description">
+            Set dietary goals, allergies, and preferences. Results use these settings for each product.
+          </p>
+          <div style="margin-top: 16px;">
+            <span class="text-muted">Vegan • Gluten-free • Low sodium</span>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">📸</div>
+          <h3 class="feature-card-title">Screenshot Analysis</h3>
+          <p class="feature-card-description">
+            Analyze food labels from screenshots for online shopping or menu browsing.
+          </p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+            <span class="rag-indicator rag-indicator-amber"></span>
+            <span class="text-muted">Automated analysis</span>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-card-icon">🍽️</div>
+          <h3 class="feature-card-title">Buffet Assistant</h3>
+          <p class="feature-card-description">
+            Analyze buffet photos to see which items align with your preferences.
+          </p>
+          <div style="margin-top: 16px; display: flex; gap: 8px; align-items: center;">
+            <span class="rag-indicator rag-indicator-green"></span>
+            <span class="text-muted">Photo-based suggestions</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section surface-secondary" id="how-it-works">
+    <div class="container">
+      <h2 class="text-center mb-5">How It Works</h2>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Step 1 -->
+        <div class="card mb-4">
+          <div class="flex gap-3">
+            <div style="font-size: 2rem;">1️⃣</div>
+            <div>
+              <h3 class="text-primary mb-2">Set Your Preferences</h3>
+              <p class="text-secondary mb-0">
+                Enter dietary goals, allergies, and lifestyle preferences. Results use these settings.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card mb-4">
+          <div class="flex gap-3">
+            <div style="font-size: 2rem;">2️⃣</div>
+            <div>
+              <h3 class="text-primary mb-2">Scan Products</h3>
+              <p class="text-secondary mb-0">
+                Use your camera to scan barcodes. Results include clear 
+                <span class="rag-indicator rag-indicator-green"></span>
+                <span class="rag-indicator rag-indicator-amber"></span>
+                <span class="rag-indicator rag-indicator-red"></span>
+                indicators.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card mb-4">
+          <div class="flex gap-3">
+            <div style="font-size: 2rem;">3️⃣</div>
+            <div>
+              <h3 class="text-primary mb-2">Review Results</h3>
+              <p class="text-secondary mb-0">
+                See why products align or not with your preferences. Save items to your cupboard.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Bands Explanation -->
+  <section class="section surface-primary">
+    <div class="container">
+      <h2 class="text-center mb-5">Understanding Health Bands</h2>
+      
+      <div style="max-width: 700px; margin: 0 auto;">
+        
+        <div class="card rag-accent-green mb-4">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="rag-badge rag-badge-green">Green</span>
+            <h3 class="text-primary mb-0">Green Band</h3>
+          </div>
+          <p class="text-secondary mb-0">
+            Products that align with your dietary preferences. Review ingredients and nutrients for details.
+          </p>
+        </div>
+
+        <div class="card rag-accent-amber mb-4">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="rag-badge rag-badge-amber">Amber</span>
+            <h3 class="text-primary mb-0">Amber Band</h3>
+          </div>
+          <p class="text-secondary mb-0">
+            Products with some considerations. Review ingredients and nutrients for details.
+          </p>
+        </div>
+
+        <div class="card rag-accent-red mb-4">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="rag-badge rag-badge-red">Red</span>
+            <h3 class="text-primary mb-0">Red Band</h3>
+          </div>
+          <p class="text-secondary mb-0">
+            Products that may not align with your preferences. Review ingredients and nutrients for details.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section surface-secondary" id="pricing">
+    <div class="container">
+      <h2 class="text-center mb-3">Pricing</h2>
+      <p class="text-center text-secondary mb-5">Free trial available. No credit card required.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Free Trial -->
+        <div class="card">
+          <h3 class="text-primary mb-2">Free Trial</h3>
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px;">
+            7 Days
+          </div>
+          <p class="text-secondary mb-4">Access premium features during the trial</p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 24px 0;">
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Unlimited scans</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Cupboard</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+            <span class="text-secondary">Recipe suggestions</span>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn-secondary" style="width: 100%;">Start trial</a>
+        </div>
+
+        <!-- Monthly -->
+        <div class="card" style="border: 2px solid var(--brand-primary);">
+          <div style="background-color: var(--brand-primary); color: var(--text-primary); padding: 4px 12px; border-radius: 6px; display: inline-block; font-size: 0.75rem; font-weight: 600; margin-bottom: 12px;">
+            MONTHLY PLAN
+          </div>
+          <h3 class="text-primary mb-2">Monthly</h3>
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            £4.99
+          </div>
+          <p class="text-muted mb-4">per month</p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 24px 0;">
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Everything in Free Trial</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Weekly insights</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Priority support</span>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn-primary" style="width: 100%;">Select monthly plan</a>
+        </div>
+
+        <!-- Yearly -->
+        <div class="card">
+          <div style="background-color: var(--rag-green-bg); color: var(--rag-green); padding: 4px 12px; border-radius: 6px; display: inline-block; font-size: 0.75rem; font-weight: 600; margin-bottom: 12px; border: 1px solid var(--rag-green);">
+            YEARLY PLAN
+          </div>
+          <h3 class="text-primary mb-2">Yearly</h3>
+          <div style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            £39.99
+          </div>
+          <p class="text-muted mb-4">per year</p>
+          <ul style="list-style: none; padding: 0; margin: 0 0 24px 0;">
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Everything in Monthly</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Annual billing</span>
+            </li>
+            <li class="mb-2 flex items-center gap-2">
+              <span class="rag-indicator rag-indicator-green"></span>
+              <span class="text-secondary">Yearly plan access</span>
+            </li>
+          </ul>
+          <a href="#download" class="btn btn-primary" style="width: 100%;">Select yearly plan</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section surface-primary" id="download">
+    <div class="container text-center">
+      <h2 class="mb-3">Download the app</h2>
+      <p class="text-secondary mb-5" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+        Download MyFoodFit on iOS or Android.
+      </p>
+      <div class="flex gap-3 justify-center" style="flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary btn-large">Download for iOS</a>
+        <a href="#" class="btn btn-primary btn-large">Download for Android</a>
+      </div>
+      <p class="text-muted mt-3">Free 7-day trial • No credit card required</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-grid">
+        
+        <div>
+          <h4 class="footer-section-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#pricing" class="footer-link">Pricing</a></li>
+            <li><a href="#download" class="footer-link">Download</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#blog" class="footer-link">Blog</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#help" class="footer-link">Help Center</a></li>
+            <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-section-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#twitter" class="footer-link">Twitter</a></li>
+            <li><a href="#instagram" class="footer-link">Instagram</a></li>
+            <li><a href="#facebook" class="footer-link">Facebook</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 MyFoodFit. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

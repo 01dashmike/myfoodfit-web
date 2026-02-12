@@ -1,0 +1,46 @@
+/* =============================================================================
+ * MyFoodFit Web Theme Tokens
+ * =============================================================================
+ * Aligned with mobile app theme for brand coherence
+ * Mobile app colors defined in: src/theme/tokens.ts
+ */
+
+:root {
+  /* Backgrounds - Gunmetal palette */
+  --bg-primary: #0E1116;
+  --bg-surface: #161A22;
+  --bg-surface-alt: #1D222C;
+  
+  /* Text Hierarchy - White + Muted Grey */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B6BDC9;
+  --text-muted: #7C8391;
+  
+  /* Brand - Coach Green */
+  --brand-primary: #1F7A4D;
+  --brand-primary-hover: #2FA36A;
+  --brand-primary-soft: rgba(31, 122, 77, 0.15);
+  
+  /* RAG Indicators - Use sparingly, small elements only */
+  --rag-green: #2ECC71;
+  --rag-amber: #F4C430;
+  --rag-red: #E74C3C;
+  
+  /* RAG Backgrounds - Subtle tints */
+  --rag-green-bg: rgba(46, 204, 113, 0.12);
+  --rag-amber-bg: rgba(244, 196, 48, 0.14);
+  --rag-red-bg: rgba(231, 76, 60, 0.12);
+  
+  /* Borders & Dividers */
+  --border-subtle: #252A36;
+  --divider: #2A3036;
+  
+  /* Semantic Colors */
+  --success: var(--rag-green);
+  --warning: var(--rag-amber);
+  --error: var(--rag-red);
+  
+  /* Interactive States */
+  --focus-ring: rgba(47, 163, 106, 0.7);
+  --disabled: rgba(124, 131, 145, 0.5);
+}

@@ -1,17 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0f1417;
-  --foreground: #c8d0d6;
-  --surface: #161c20;
-  --surface-elevated: #1b2227;
-  --border: #2a3238;
-  --text-primary: #f5f7f8;
-  --text-body: #c8d0d6;
-  --text-muted: #9aa4ab;
-  --accent-primary: #1f8f4a;
-  --accent-primary-hover: #176b39;
-  --accent-outline: rgba(31, 143, 74, 0.4);
+  /* Backgrounds - Gunmetal palette (aligned with mobile app) */
+  --background: #0E1116;
+  --foreground: #B6BDC9;
+  --surface: #161A22;
+  --surface-elevated: #1D222C;
+  --border: #252A36;
+  
+  /* Text hierarchy */
+  --text-primary: #FFFFFF;
+  --text-body: #B6BDC9;
+  --text-muted: #7C8391;
+  
+  /* Brand - Coach Green */
+  --accent-primary: #1F7A4D;
+  --accent-primary-hover: #2FA36A;
+  --accent-outline: rgba(31, 122, 77, 0.4);
+  
+  /* RAG Indicators (for small elements only) */
+  --rag-green: #2ECC71;
+  --rag-amber: #F4C430;
+  --rag-red: #E74C3C;
 }
 
 @theme inline {
@@ -23,17 +33,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f1417;
-    --foreground: #c8d0d6;
-    --surface: #161c20;
-    --surface-elevated: #1b2227;
-    --border: #2a3238;
-    --text-primary: #f5f7f8;
-    --text-body: #c8d0d6;
-    --text-muted: #9aa4ab;
-    --accent-primary: #1f8f4a;
-    --accent-primary-hover: #176b39;
-    --accent-outline: rgba(31, 143, 74, 0.4);
+    /* Backgrounds - Gunmetal palette (aligned with mobile app) */
+    --background: #0E1116;
+    --foreground: #B6BDC9;
+    --surface: #161A22;
+    --surface-elevated: #1D222C;
+    --border: #252A36;
+    
+    /* Text hierarchy */
+    --text-primary: #FFFFFF;
+    --text-body: #B6BDC9;
+    --text-muted: #7C8391;
+    
+    /* Brand - Coach Green */
+    --accent-primary: #1F7A4D;
+    --accent-primary-hover: #2FA36A;
+    --accent-outline: rgba(31, 122, 77, 0.4);
+    
+    /* RAG Indicators (for small elements only) */
+    --rag-green: #2ECC71;
+    --rag-amber: #F4C430;
+    --rag-red: #E74C3C;
   }
 }
 
@@ -169,6 +189,114 @@ body {
   border-radius: 6px;
   background: var(--surface-elevated);
   line-height: 1;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Buttons - Brand Green Actions
+   Aligned with mobile app theme
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(31, 122, 77, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: 2px solid var(--accent-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-elevated);
+  border-color: var(--accent-primary-hover);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text-body);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover {
+  background-color: var(--surface);
+  color: var(--text-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Links - Brand Green with hover
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-primary-hover);
+}
+
+/* Reset link colors for nav and structural elements */
+header a,
+footer a,
+nav a {
+  color: var(--text-body);
+}
+
+header a:hover,
+footer a:hover,
+nav a:hover {
+  color: var(--text-primary);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Cards - Surface backgrounds with subtle borders
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-primary);
 }
 
 @layer utilities {

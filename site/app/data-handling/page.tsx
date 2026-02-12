@@ -88,9 +88,20 @@ export default function DataHandlingPage() {
           If you have questions about how data is handled, please contact{" "}
           <a
             className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-            href="mailto:support@myfoodfit.co.uk"
+            href="mailto:privacy@myfoodfit.co"
           >
-            support@myfoodfit.co.uk
+            privacy@myfoodfit.co
+          </a>
+          .
+        </p>
+        <p className="body-text mt-3 text-zinc-600 sm:mt-4">
+          For detailed information about your privacy rights and how we process
+          personal data, please see our{" "}
+          <a
+            className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
+            href="/privacy"
+          >
+            Privacy Policy
           </a>
           .
         </p>
