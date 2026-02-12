@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,8 +22,14 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col bg-zinc-50">
         <header className="border-b border-zinc-200 bg-white print:hidden">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-            <a href="/" className="logo-slot">
-              MyFoodFit
+            <a href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="MyFoodFit"
+                width={36}
+                height={36}
+                className="h-9 w-auto"
+              />
             </a>
             <nav className="flex items-center gap-4 text-sm">
               <a
@@ -36,6 +43,18 @@ export default function RootLayout({
                 className="text-zinc-600 hover:text-zinc-900 transition"
               >
                 How It Works
+              </a>
+              <a
+                href="/work-with-us"
+                className="text-zinc-600 hover:text-zinc-900 transition"
+              >
+                Work With Us
+              </a>
+              <a
+                href="/research-method"
+                className="text-zinc-600 hover:text-zinc-900 transition"
+              >
+                Research Method
               </a>
             </nav>
           </div>
