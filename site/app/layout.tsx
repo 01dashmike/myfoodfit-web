@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Header from "./components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,38 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: '#fafafa' }}>
-        <header className="print:hidden" style={{ background: '#fff', borderBottom: '1px solid #e4e4e7' }}>
-          <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
-              <Image
-                src="/logo.png"
-                alt="MyFoodFit"
-                width={56}
-                height={56}
-                style={{ height: '56px', width: 'auto' }}
-              />
-            </a>
-            <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-              <a href="/about">About</a>
-              <a href="/how-it-works">How It Works</a>
-              <a href="/work-with-us">Work With Us</a>
-              <a href="/research-method">Research Method</a>
-            </nav>
-          </div>
-        </header>
+      <body className="flex flex-col min-h-screen bg-zinc-50">
+        <Header />
 
-        <main style={{ maxWidth: '56rem', margin: '0 auto', width: '100%', flex: 1, padding: '2rem 1.5rem' }}>
+        <main className="max-w-4xl mx-auto w-full flex-1 px-6 py-8">
           {children}
         </main>
 
-        <footer className="print:hidden" style={{ background: '#fff', borderTop: '1px solid #e4e4e7' }}>
-          <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '2rem 1.5rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
+        <footer className="print:hidden bg-white border-t border-zinc-200">
+          <div className="max-w-4xl mx-auto px-6 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               {/* Company */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Company</h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                <h3 className="text-sm font-semibold text-gunmetal mb-3">Company</h3>
+                <ul className="space-y-2 text-sm">
                   <li><a href="/about">About</a></li>
                   <li><a href="/how-it-works">How It Works</a></li>
                   <li><a href="/responsible-use">Responsible Use</a></li>
@@ -60,8 +42,8 @@ export default function RootLayout({
 
               {/* Research */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Research</h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                <h3 className="text-sm font-semibold text-gunmetal mb-3">Research</h3>
+                <ul className="space-y-2 text-sm">
                   <li><a href="/research-method">Research Method</a></li>
                   <li><a href="/evidence-log">Evidence Log</a></li>
                   <li><a href="/for-funders">For Funders</a></li>
@@ -70,8 +52,8 @@ export default function RootLayout({
 
               {/* Legal */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Legal</h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                <h3 className="text-sm font-semibold text-gunmetal mb-3">Legal</h3>
+                <ul className="space-y-2 text-sm">
                   <li><a href="/privacy">Privacy Policy</a></li>
                   <li><a href="/cookies">Cookie Policy</a></li>
                   <li><a href="/data-handling">Data Handling</a></li>
@@ -81,8 +63,8 @@ export default function RootLayout({
 
               {/* Data Rights */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Your Data Rights</h3>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
+                <h3 className="text-sm font-semibold text-gunmetal mb-3">Your Data Rights</h3>
+                <ul className="space-y-2 text-sm">
                   <li><a href="/data-requests">Data Requests (DSAR)</a></li>
                   <li><a href="/data-deletion">Delete Your Data</a></li>
                   <li><a href="mailto:support@myfoodfit.co.uk">support@myfoodfit.co.uk</a></li>
@@ -90,8 +72,8 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #e4e4e7' }}>
-              <p style={{ fontSize: '0.75rem', color: '#71717a' }}>
+            <div className="mt-8 pt-6 border-t border-zinc-200">
+              <p className="text-xs text-zinc-500">
                 © {new Date().getFullYear()} Food Signal Ltd. Registered in
                 England and Wales. All rights reserved.
               </p>
