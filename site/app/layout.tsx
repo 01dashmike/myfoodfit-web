@@ -26,9 +26,9 @@ export default function RootLayout({
               <Image
                 src="/logo.png"
                 alt="MyFoodFit"
-                width={48}
-                height={48}
-                style={{ height: '48px', width: 'auto' }}
+                width={56}
+                height={56}
+                style={{ height: '56px', width: 'auto' }}
               />
             </a>
             <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
