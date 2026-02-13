@@ -167,16 +167,15 @@ export default function SubProcessorsPage() {
             </div>
           </div>
 
-          {/* Nutritionix */}
+          {/* API Ninjas */}
           <div className="border-b border-zinc-200 pb-6">
-            <p className="subsection-header">Nutritionix (Syndigo LLC)</p>
+            <p className="subsection-header">API Ninjas</p>
             <div className="body-text mt-3 space-y-2 text-zinc-600">
               <p>
                 <strong>Purpose:</strong> Food and nutrition database API
               </p>
               <p>
-                <strong>Data processed:</strong> Product barcodes scanned,
-                search queries for food items
+                <strong>Data processed:</strong> Search queries for food items
               </p>
               <p>
                 <strong>Location:</strong> United States
@@ -189,22 +188,22 @@ export default function SubProcessorsPage() {
                 <strong>Website:</strong>{" "}
                 <a
                   className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-                  href="https://nutritionix.com"
+                  href="https://api-ninjas.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  nutritionix.com
+                  api-ninjas.com
                 </a>
               </p>
               <p>
                 <strong>Privacy Policy:</strong>{" "}
                 <a
                   className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-                  href="https://www.nutritionix.com/privacy"
+                  href="https://api-ninjas.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  nutritionix.com/privacy
+                  api-ninjas.com/privacy
                 </a>
               </p>
             </div>

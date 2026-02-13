@@ -233,26 +233,15 @@ export default function DataDeletionPage() {
         <p className="body-text mt-3 text-zinc-600 sm:mt-4">
           If you have questions about data deletion or need assistance:
         </p>
-        <ul className="body-text mt-3 space-y-2 text-zinc-600 sm:mt-4">
-          <li>
-            <strong>General support:</strong>{" "}
-            <a
-              className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:support@myfoodfit.co.uk"
-            >
-              support@myfoodfit.co.uk
-            </a>
-          </li>
-          <li>
-            <strong>Privacy enquiries:</strong>{" "}
-            <a
-              className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-href="mailto:support@myfoodfit.co.uk"
-              >
-              support@myfoodfit.co.uk
-            </a>
-          </li>
-        </ul>
+        <p className="body-text mt-3 text-zinc-600 sm:mt-4">
+          <strong>Email:</strong>{" "}
+          <a
+            className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
+            href="mailto:support@myfoodfit.co.uk"
+          >
+            support@myfoodfit.co.uk
+          </a>
+        </p>
         <p className="body-text mt-4 text-zinc-600 sm:mt-6">
           For more information about how we handle your data, please see our{" "}
           <a

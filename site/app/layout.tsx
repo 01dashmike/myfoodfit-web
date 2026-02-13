@@ -26,9 +26,9 @@ export default function RootLayout({
               <Image
                 src="/logo.png"
                 alt="MyFoodFit"
-                width={36}
-                height={36}
-                style={{ height: '36px', width: 'auto' }}
+                width={48}
+                height={48}
+                style={{ height: '48px', width: 'auto' }}
               />
             </a>
             <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
@@ -49,7 +49,7 @@ export default function RootLayout({
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
               {/* Company */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Company</h3>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Company</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
                   <li><a href="/about">About</a></li>
                   <li><a href="/how-it-works">How It Works</a></li>
@@ -60,7 +60,7 @@ export default function RootLayout({
 
               {/* Research */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Research</h3>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Research</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
                   <li><a href="/research-method">Research Method</a></li>
                   <li><a href="/evidence-log">Evidence Log</a></li>
@@ -70,7 +70,7 @@ export default function RootLayout({
 
               {/* Legal */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Legal</h3>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Legal</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
                   <li><a href="/privacy">Privacy Policy</a></li>
                   <li><a href="/cookies">Cookie Policy</a></li>
@@ -81,7 +81,7 @@ export default function RootLayout({
 
               {/* Data Rights */}
               <div>
-                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#18181b', marginBottom: '0.75rem' }}>Your Data Rights</h3>
+                <h3 style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0E1116', marginBottom: '0.75rem' }}>Your Data Rights</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
                   <li><a href="/data-requests">Data Requests (DSAR)</a></li>
                   <li><a href="/data-deletion">Delete Your Data</a></li>

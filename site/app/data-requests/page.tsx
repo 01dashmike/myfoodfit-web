@@ -245,26 +245,15 @@ export default function DataRequestsPage() {
         <p className="body-text mt-3 text-zinc-600 sm:mt-4">
           For any questions about data requests or your privacy rights:
         </p>
-        <ul className="body-text mt-3 space-y-1 text-zinc-600 sm:mt-4">
-          <li>
-            Privacy enquiries:{" "}
-            <a
-              className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:support@myfoodfit.co.uk"
-            >
-              support@myfoodfit.co.uk
-            </a>
-          </li>
-          <li>
-            General support:{" "}
-            <a
-              className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:support@myfoodfit.co.uk"
-            >
-              support@myfoodfit.co.uk
-            </a>
-          </li>
-        </ul>
+        <p className="body-text mt-3 text-zinc-600 sm:mt-4">
+          <strong>Email:</strong>{" "}
+          <a
+            className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
+            href="mailto:support@myfoodfit.co.uk"
+          >
+            support@myfoodfit.co.uk
+          </a>
+        </p>
       </section>
     </div>
   );

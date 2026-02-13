@@ -369,9 +369,9 @@ export default function PrivacyPolicyPage() {
               </div>
             </div>
 
-            {/* Nutritionix */}
+            {/* API Ninjas */}
             <div className="px-4 py-3 sm:grid sm:grid-cols-4 sm:gap-4">
-              <div className="font-medium text-zinc-900">Nutritionix</div>
+              <div className="font-medium text-zinc-900">API Ninjas</div>
               <div className="mt-1 text-sm text-zinc-600 sm:mt-0">
                 Nutrition data lookup
               </div>
@@ -381,11 +381,11 @@ export default function PrivacyPolicyPage() {
               <div className="mt-1 sm:mt-0">
                 <a
                   className="text-sm font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-                  href="https://www.nutritionix.com/privacy"
+                  href="https://api-ninjas.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  nutritionix.com/privacy
+                  api-ninjas.com/privacy
                 </a>
               </div>
             </div>

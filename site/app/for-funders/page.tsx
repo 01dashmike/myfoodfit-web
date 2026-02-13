@@ -101,12 +101,12 @@ export default function ForFundersPage() {
           </div>
           <div className="rounded-xl border border-zinc-200 bg-white p-4">
             <p className="subsection-header">
-              UPF context
+              How this food fits your dietary needs
             </p>
             <div className="mt-3 aspect-[9/16] w-full max-w-xs mx-auto rounded-lg overflow-hidden border border-zinc-200 shadow-sm">
               <Image
                 src="/screenshots/upf-context.png"
-                alt="UPF context screenshot"
+                alt="How this food fits your dietary needs screenshot"
                 width={375}
                 height={667}
                 className="w-full h-full object-cover"
@@ -115,12 +115,12 @@ export default function ForFundersPage() {
           </div>
           <div className="rounded-xl border border-zinc-200 bg-white p-4">
             <p className="subsection-header">
-              Saved foods
+              Create recipes from your saved foods to suit your diet
             </p>
             <div className="mt-3 aspect-[9/16] w-full max-w-xs mx-auto rounded-lg overflow-hidden border border-zinc-200 shadow-sm">
               <Image
                 src="/screenshots/cupboard.png"
-                alt="Saved foods screenshot"
+                alt="Create recipes from saved foods screenshot"
                 width={375}
                 height={667}
                 className="w-full h-full object-cover"
@@ -129,12 +129,12 @@ export default function ForFundersPage() {
           </div>
           <div className="rounded-xl border border-zinc-200 bg-white p-4">
             <p className="subsection-header">
-              Recipes from cupboard
+              Easy to follow, saveable recipes tailored to you
             </p>
             <div className="mt-3 aspect-[9/16] w-full max-w-xs mx-auto rounded-lg overflow-hidden border border-zinc-200 shadow-sm">
               <Image
                 src="/screenshots/recipes.png"
-                alt="Recipes from cupboard screenshot"
+                alt="Saveable recipes tailored to you screenshot"
                 width={375}
                 height={667}
                 className="w-full h-full object-cover"

@@ -132,12 +132,12 @@ export default function HowItWorksPage() {
           </div>
           <div className="rounded-xl border border-zinc-200 bg-white p-4">
             <p className="subsection-header">
-              Data confidence indicators
+              Personalised recipes for your dietary needs
             </p>
             <div className="mt-3 aspect-[9/16] w-full max-w-xs mx-auto rounded-lg overflow-hidden border border-zinc-200 shadow-sm">
               <Image
                 src="/screenshots/cupboard.png"
-                alt="Data confidence indicators screenshot"
+                alt="Personalised recipes screenshot"
                 width={375}
                 height={667}
                 className="w-full h-full object-cover"

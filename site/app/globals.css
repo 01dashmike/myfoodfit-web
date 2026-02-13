@@ -17,6 +17,9 @@
   --accent-primary: #1F7A4D;
   --accent-primary-hover: #166534;
   --accent-outline: rgba(31, 122, 77, 0.2);
+  
+  /* Gunmetal Grey - Premium dark tone */
+  --gunmetal: #0E1116;
 }
 
 @theme inline {
@@ -85,7 +88,7 @@ footer a:hover {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
+  color: var(--gunmetal);
 }
 
 @media (min-width: 640px) {
@@ -99,7 +102,7 @@ footer a:hover {
   font-size: 1.125rem; /* 18px mobile */
   font-weight: 600;
   line-height: 1.3;
-  color: var(--text-primary);
+  color: var(--gunmetal);
 }
 
 @media (min-width: 640px) {
@@ -113,7 +116,7 @@ footer a:hover {
   font-size: 1rem; /* 16px mobile */
   font-weight: 500;
   line-height: 1.4;
-  color: var(--text-primary);
+  color: var(--gunmetal);
 }
 
 @media (min-width: 640px) {
