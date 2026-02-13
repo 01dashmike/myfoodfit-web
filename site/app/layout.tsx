@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', background: '#fafafa' }}>
-        <header className="print:hidden" style={{ background: '#fff', borderBottom: '1px solid #e4e4e7' }}>
+        <header className="print:hidden" style={{ background: '#0E1116' }}>
           <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <a href="/" style={{ display: 'flex', alignItems: 'center' }}>
               <Image
