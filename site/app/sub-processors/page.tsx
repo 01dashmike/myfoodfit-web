@@ -317,9 +317,9 @@ export default function SubProcessorsPage() {
           at{" "}
           <a
             className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-            href="mailto:privacy@myfoodfit.co"
+            href="mailto:support@myfoodfit.co.uk"
           >
-            privacy@myfoodfit.co
+            support@myfoodfit.co.uk
           </a>
           .
         </p>
@@ -333,9 +333,9 @@ export default function SubProcessorsPage() {
           contact us at{" "}
           <a
             className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-            href="mailto:privacy@myfoodfit.co"
+            href="mailto:support@myfoodfit.co.uk"
           >
-            privacy@myfoodfit.co
+            support@myfoodfit.co.uk
           </a>{" "}
           to discuss your requirements.
         </p>
@@ -351,9 +351,9 @@ export default function SubProcessorsPage() {
             Email:{" "}
             <a
               className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:privacy@myfoodfit.co"
+              href="mailto:support@myfoodfit.co.uk"
             >
-              privacy@myfoodfit.co
+              support@myfoodfit.co.uk
             </a>
           </li>
         </ul>

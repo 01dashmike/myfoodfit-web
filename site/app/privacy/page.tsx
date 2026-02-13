@@ -805,9 +805,9 @@ export default function PrivacyPolicyPage() {
             <strong>Data Protection Enquiries:</strong>{" "}
             <a
               className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:privacy@myfoodfit.co.uk"
-            >
-              privacy@myfoodfit.co.uk
+href="mailto:support@myfoodfit.co.uk"
+              >
+              support@myfoodfit.co.uk
             </a>
           </li>
         </ul>

@@ -71,9 +71,9 @@ export default function DataRequestsPage() {
               Send your request to{" "}
               <a
                 className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-                href="mailto:privacy@myfoodfit.co"
+                href="mailto:support@myfoodfit.co.uk"
               >
-                privacy@myfoodfit.co
+                support@myfoodfit.co.uk
               </a>
             </p>
             <p className="body-text mt-2 text-zinc-600 sm:mt-3">
@@ -197,9 +197,9 @@ export default function DataRequestsPage() {
             <strong>By email:</strong> Send a deletion request to{" "}
             <a
               className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:privacy@myfoodfit.co"
+              href="mailto:support@myfoodfit.co.uk"
             >
-              privacy@myfoodfit.co
+              support@myfoodfit.co.uk
             </a>
           </li>
         </ul>
@@ -250,9 +250,9 @@ export default function DataRequestsPage() {
             Privacy enquiries:{" "}
             <a
               className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:privacy@myfoodfit.co"
+              href="mailto:support@myfoodfit.co.uk"
             >
-              privacy@myfoodfit.co
+              support@myfoodfit.co.uk
             </a>
           </li>
           <li>

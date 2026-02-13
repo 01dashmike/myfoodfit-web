@@ -85,7 +85,7 @@ export default function RootLayout({
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem' }}>
                   <li><a href="/data-requests">Data Requests (DSAR)</a></li>
                   <li><a href="/data-deletion">Delete Your Data</a></li>
-                  <li><a href="mailto:privacy@myfoodfit.co.uk">privacy@myfoodfit.co.uk</a></li>
+                  <li><a href="mailto:support@myfoodfit.co.uk">support@myfoodfit.co.uk</a></li>
                 </ul>
               </div>
             </div>

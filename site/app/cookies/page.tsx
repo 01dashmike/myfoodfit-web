@@ -254,9 +254,9 @@ export default function CookiePolicyPage() {
             Email:{" "}
             <a
               className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-600"
-              href="mailto:privacy@myfoodfit.co"
+              href="mailto:support@myfoodfit.co.uk"
             >
-              privacy@myfoodfit.co
+              support@myfoodfit.co.uk
             </a>
           </li>
         </ul>
