@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="print:hidden bg-white border-b border-zinc-200">
-      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         <a href="/" className="flex items-center">
           <Image
             src="/logo.png"
@@ -64,16 +64,16 @@ export default function Header() {
 
       {/* Mobile menu dropdown */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-200 ${
-          isMenuOpen ? "max-h-64" : "max-h-0"
+        className={`md:hidden overflow-hidden transition-all duration-200 bg-zinc-50 ${
+          isMenuOpen ? "max-h-80" : "max-h-0"
         }`}
       >
-        <nav className="px-6 pb-4 flex flex-col gap-3 border-t border-zinc-100 pt-3">
+        <nav className="px-4 pb-4 flex flex-col gap-1 border-t border-zinc-200 pt-2">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="py-2 text-zinc-600 hover:text-zinc-900"
+              className="py-3 px-2 text-zinc-700 hover:text-zinc-900 hover:bg-zinc-100 rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
