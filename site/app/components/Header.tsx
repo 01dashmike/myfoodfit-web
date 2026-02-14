@@ -26,8 +26,8 @@ export default function Header() {
           />
         </a>
 
-        {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* Desktop navigation - hidden on mobile */}
+        <nav className="items-center gap-8" style={{ display: 'none' }} id="desktop-nav">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}>
               {link.label}

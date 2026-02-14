@@ -47,15 +47,15 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
-/* Desktop nav styling - only apply at md+ to avoid overriding Tailwind on mobile */
+/* Desktop nav - show only at md+ */
 @media (min-width: 768px) {
-  header nav {
-    display: flex;
+  #desktop-nav {
+    display: flex !important;
     align-items: center;
     gap: 2rem;
   }
 
-  header nav a {
+  #desktop-nav a {
     color: var(--text-body);
     font-size: 0.875rem;
     font-weight: 500;
@@ -63,12 +63,12 @@ header {
     transition: color 0.15s ease;
   }
 
-  header nav a:hover {
+  #desktop-nav a:hover {
     color: var(--text-primary);
   }
 }
 
-/* Mobile nav link styling */
+/* Mobile nav styling */
 @media (max-width: 767px) {
   header nav a {
     color: var(--text-body);
