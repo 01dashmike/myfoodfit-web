@@ -26,8 +26,8 @@ export default function Header() {
           />
         </a>
 
-        {/* Desktop navigation - hidden on mobile */}
-        <nav className="items-center gap-8" style={{ display: 'none' }} id="desktop-nav">
+        {/* Desktop navigation - visibility controlled in globals.css by media query */}
+        <nav id="desktop-nav" className="items-center gap-8">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}>
               {link.label}
@@ -35,9 +35,10 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile hamburger button */}
+        {/* Mobile hamburger - visibility controlled in globals.css */}
         <button
-          className="md:hidden p-2 -mr-2"
+          type="button"
+          className="header-mobile-menu-btn p-2 -mr-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
@@ -62,13 +63,11 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile menu dropdown */}
+      {/* Mobile menu dropdown - visibility and open state in globals.css */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-200 bg-zinc-50 ${
-          isMenuOpen ? "max-h-80" : "max-h-0"
-        }`}
+        className={`header-mobile-dropdown bg-zinc-50 border-t border-zinc-200 ${isMenuOpen ? "is-open" : ""}`}
       >
-        <nav className="px-4 pb-4 flex flex-col gap-1 border-t border-zinc-200 pt-2">
+        <nav className="px-4 pb-4 gap-1 pt-2">
           {navLinks.map((link) => (
             <a
               key={link.href}
