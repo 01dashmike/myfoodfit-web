@@ -6,7 +6,7 @@ import { registerInterest } from "../actions/register-interest";
 
 function formAction(_prev: { success?: boolean; error?: string } | null, formData: FormData) {
   return registerInterest(formData).then((r) =>
-    r.success ? { success: true } : { success: false, error: r.error }
+    r.success ? { success: true } : { success: false, error: (r as { success: false; error: string }).error }
   );
 }
 
