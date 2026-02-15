@@ -85,12 +85,12 @@ export default function Header() {
       <div
         className={`header-mobile-dropdown bg-zinc-50 border-t border-zinc-200 ${isMenuOpen ? "is-open" : ""}`}
       >
-        <nav className="px-4 pb-4 gap-1 pt-2">
+        <nav className="px-4 pb-4 pt-2">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="py-3 px-2 text-zinc-700 hover:text-zinc-900 hover:bg-zinc-100 rounded-lg transition-colors"
+              className="block text-zinc-700 hover:text-zinc-900 hover:bg-zinc-100 rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
