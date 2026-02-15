@@ -16,10 +16,29 @@ export default function Header() {
   return (
     <header className="print:hidden bg-white border-b border-zinc-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-        {/* Mobile hamburger first (Spoonful-style: burger left, logo right on mobile) */}
+        <a href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="MyFoodFit"
+            width={56}
+            height={56}
+            style={{ height: "56px", width: "auto" }}
+          />
+        </a>
+
+        {/* Desktop navigation - visibility controlled in globals.css by media query */}
+        <nav id="desktop-nav" className="items-center gap-8">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Mobile hamburger on the right */}
         <button
           type="button"
-          className="header-mobile-menu-btn p-2 -ml-2"
+          className="header-mobile-menu-btn p-2 -mr-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
@@ -60,25 +79,6 @@ export default function Header() {
             />
           </div>
         </button>
-
-        <a href="/" className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="MyFoodFit"
-            width={56}
-            height={56}
-            style={{ height: "56px", width: "auto" }}
-          />
-        </a>
-
-        {/* Desktop navigation - visibility controlled in globals.css by media query */}
-        <nav id="desktop-nav" className="items-center gap-8">
-          {navLinks.map((link) => (
-            <a key={link.href} href={link.href}>
-              {link.label}
-            </a>
-          ))}
-        </nav>
       </div>
 
       {/* Mobile menu dropdown - visibility and open state in globals.css */}

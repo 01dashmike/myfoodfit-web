@@ -116,7 +116,7 @@ header {
 @media (max-width: 767px) {
   header .header-mobile-dropdown nav a {
     color: var(--text-body);
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.15s ease;
