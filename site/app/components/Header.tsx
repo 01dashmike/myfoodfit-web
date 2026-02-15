@@ -24,21 +24,39 @@ export default function Header() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
         >
-          <div className="w-6 h-5 relative flex flex-col justify-between">
+          <div
+            className="relative flex flex-col justify-between"
+            style={{ width: 24, height: 20 }}
+          >
             <span
-              className={`block h-1 w-6 bg-zinc-800 rounded transition-transform duration-200 ${
+              className={`block rounded-sm transition-transform duration-200 ${
                 isMenuOpen ? "rotate-45 translate-y-2" : ""
               }`}
+              style={{
+                width: 24,
+                height: 4,
+                backgroundColor: "#18181b",
+              }}
             />
             <span
-              className={`block h-1 w-6 bg-zinc-800 rounded transition-opacity duration-200 ${
+              className={`block rounded-sm transition-opacity duration-200 ${
                 isMenuOpen ? "opacity-0" : ""
               }`}
+              style={{
+                width: 24,
+                height: 4,
+                backgroundColor: "#18181b",
+              }}
             />
             <span
-              className={`block h-1 w-6 bg-zinc-800 rounded transition-transform duration-200 ${
+              className={`block rounded-sm transition-transform duration-200 ${
                 isMenuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
+              style={{
+                width: 24,
+                height: 4,
+                backgroundColor: "#18181b",
+              }}
             />
           </div>
         </button>
