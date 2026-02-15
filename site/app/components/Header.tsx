@@ -16,6 +16,33 @@ export default function Header() {
   return (
     <header className="print:hidden bg-white border-b border-zinc-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+        {/* Mobile hamburger first (Spoonful-style: burger left, logo right on mobile) */}
+        <button
+          type="button"
+          className="header-mobile-menu-btn p-2 -ml-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+        >
+          <div className="w-6 h-5 relative flex flex-col justify-between">
+            <span
+              className={`block h-1 w-6 bg-zinc-800 rounded transition-transform duration-200 ${
+                isMenuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            />
+            <span
+              className={`block h-1 w-6 bg-zinc-800 rounded transition-opacity duration-200 ${
+                isMenuOpen ? "opacity-0" : ""
+              }`}
+            />
+            <span
+              className={`block h-1 w-6 bg-zinc-800 rounded transition-transform duration-200 ${
+                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            />
+          </div>
+        </button>
+
         <a href="/" className="flex items-center">
           <Image
             src="/logo.png"
@@ -34,33 +61,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-
-        {/* Mobile hamburger - visibility controlled in globals.css */}
-        <button
-          type="button"
-          className="header-mobile-menu-btn p-2 -mr-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isMenuOpen}
-        >
-          <div className="w-6 h-5 relative flex flex-col justify-between">
-            <span
-              className={`block h-0.5 w-6 bg-zinc-700 rounded transition-transform duration-200 ${
-                isMenuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-zinc-700 rounded transition-opacity duration-200 ${
-                isMenuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 bg-zinc-700 rounded transition-transform duration-200 ${
-                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            />
-          </div>
-        </button>
       </div>
 
       {/* Mobile menu dropdown - visibility and open state in globals.css */}

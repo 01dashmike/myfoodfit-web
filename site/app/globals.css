@@ -47,6 +47,12 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+@media (max-width: 767px) {
+  header {
+    border-bottom-color: #d4d4d8; /* zinc-300 for clearer separation */
+  }
+}
+
 /* Header: explicit mobile vs desktop - no Tailwind dependency */
 @media (max-width: 767px) {
   #desktop-nav {
@@ -57,6 +63,8 @@ header {
     display: flex !important;
     align-items: center;
     justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .header-mobile-dropdown {
