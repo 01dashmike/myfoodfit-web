@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import RegisterInterestForm from "./components/RegisterInterestForm";
 
 export const metadata: Metadata = {
   alternates: {
@@ -21,13 +22,13 @@ export default function Home() {
           Designed for individuals and research partners seeking clarity in food evaluation.
         </p>
         <p className="mt-8">
-          <a
-            href="#download"
-            className="btn btn-primary btn-large inline-flex items-center justify-center rounded-xl transition-all duration-200 hover:scale-[1.02] hover:shadow-md"
+          <span
+            className="btn btn-primary btn-large inline-flex items-center justify-center rounded-xl opacity-75 cursor-not-allowed"
           >
-            Download MyFoodFit
-          </a>
+            Coming Soon
+          </span>
         </p>
+        <RegisterInterestForm />
       </section>
 
       <section

@@ -555,6 +555,21 @@ ul {
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––
+   Page load fade-in (SaaS micro-interactions)
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––
    Print Styles for PDF Export
    Grant and institutional review ready
    –––––––––––––––––––––––––––––––––––––––––– */
