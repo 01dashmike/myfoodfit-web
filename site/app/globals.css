@@ -253,6 +253,133 @@ footer a:hover {
   }
 }
 
+/* ––––––––––––––––––––––––––––––––––––––––––
+   Landing: Container, Hero & Form sections
+   Mobile-first, 375–428px
+   –––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ffffff;
+}
+
+.hero-badge {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: var(--gunmetal);
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: var(--text-body);
+}
+
+.hero-cta {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.form-section {
+  padding-bottom: 32px;
+}
+
+.form-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form card content: input groups and controls */
+.form-input-group {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  color: var(--gunmetal);
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-outline);
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  border: 1px solid var(--border);
+  color: var(--gunmetal);
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-outline);
+}
+
+.form-cta-wrap {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.form-submit-btn {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+}
+
 /* Logo styling handled by Tailwind classes in layout.tsx */
 
 /* ––––––––––––––––––––––––––––––––––––––––––

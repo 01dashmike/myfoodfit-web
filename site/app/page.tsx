@@ -10,28 +10,35 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
-      {/* 1. Hero */}
-      <section className="card-primary rounded-2xl border border-zinc-200 bg-white transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md animate-[fadeIn_0.6s_ease-out_forwards]">
-        <p className="mt-0 text-xs uppercase tracking-widest text-zinc-500">
-          Early-stage, in beta
-        </p>
-        <h1 className="mt-2 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-[var(--gunmetal)] sm:mt-3 sm:text-4xl">
-          MyFoodFit helps people understand food choices against their dietary
-          needs using a clear green / amber / red system.
-        </h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-600 sm:mt-6 sm:text-lg">
-          Scan packaged foods to see how they align with dietary preferences.
-          Each rating includes a short explanation and the rule used. The
-          product is early-stage and focused on transparency over claims.
-        </p>
-        <p className="mt-8">
-          <span
-            className="btn btn-primary btn-large inline-flex items-center justify-center rounded-xl opacity-75 cursor-not-allowed"
+      {/* 1. Hero section – white background, no card */}
+      <section className="hero-section bg-white" aria-label="Hero">
+        <div className="container">
+          <span className="hero-badge">Early-stage, in beta</span>
+          <h1 className="hero-title">
+            MyFoodFit helps people understand food choices against their dietary
+            needs using a clear green / amber / red system.
+          </h1>
+          <p className="hero-description">
+            Scan packaged foods to see how they align with dietary preferences.
+            Each rating includes a short explanation and the rule used. The
+            product is early-stage and focused on transparency over claims.
+          </p>
+          <a
+            href="#form-section"
+            className="hero-cta btn btn-primary inline-flex w-full items-center justify-center rounded-[10px] py-4 text-base font-semibold transition-all duration-200 hover:scale-[1.02] hover:shadow-md"
           >
-            Coming Soon
-          </span>
-        </p>
-        <RegisterInterestForm />
+            Register interest
+          </a>
+        </div>
+      </section>
+
+      {/* 2. Form section – separate card */}
+      <section id="form-section" className="form-section" aria-label="Register your interest">
+        <div className="container">
+          <div className="form-card">
+            <RegisterInterestForm />
+          </div>
+        </div>
       </section>
 
       {/* 2. Phone Mockup Section */}
